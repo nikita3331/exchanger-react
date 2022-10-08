@@ -9,9 +9,7 @@ const Form = () => {
   const [result, setResult] = useState({});
 
   const calculateResult = (amount, currency) => {
-    const targetRate = currencies.find(
-      (currencie) => currencie.id === currency
-    ).rate;
+    const targetRate = currencies.find(({ id }) => id === currency).rate;
     console.log(targetRate);
     console.log(currency);
     console.log(amount);
