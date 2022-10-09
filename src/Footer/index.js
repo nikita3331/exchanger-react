@@ -1,7 +1,5 @@
 import "./style.css";
 
-const Footer = ({ footerContent }) => (
-  <footer className="footer">{footerContent}</footer>
-);
+const Footer = ({ content }) => <footer className="footer">{content}</footer>;
 
 export default Footer;
