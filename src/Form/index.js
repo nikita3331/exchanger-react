@@ -5,7 +5,7 @@ import currencies from "../currencies.js";
 
 const Form = () => {
   const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState(currencies[0].id);
   const [result, setResult] = useState("");
 
   const calculateResult = (amount, currency) => {
