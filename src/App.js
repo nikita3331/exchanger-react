@@ -6,11 +6,11 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="container">
-      <Header headerContent="Kalkulator Walut" />
+      <Header content="Kalkulator Walut" />
       <main>
         <Form />
       </main>
-      <Footer footerContent="Copyright © 2022 - MeggCreative" />
+      <Footer content="Copyright © 2022 - MeggCreative" />
     </div>
   );
 }
