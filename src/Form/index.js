@@ -10,9 +10,6 @@ const Form = () => {
 
   const calculateResult = (amount, currency) => {
     const targetRate = currencies.find(({ id }) => id === currency).rate;
-    console.log(targetRate);
-    console.log(currency);
-    console.log(amount);
 
     setResult({
       originalAmount: +amount,
@@ -21,7 +18,6 @@ const Form = () => {
     });
   };
 
-  console.log(result);
   const onFormSubmit = (event) => {
     event.preventDefault();
     calculateResult(amount, currency);
