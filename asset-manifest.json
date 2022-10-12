@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/exchanger-react/static/css/main.44228eeb.css",
-    "main.js": "/exchanger-react/static/js/main.85ff7c67.js",
+    "main.css": "/exchanger-react/static/css/main.f84fe93f.css",
+    "main.js": "/exchanger-react/static/js/main.cd6eb150.js",
     "static/js/787.e153456c.chunk.js": "/exchanger-react/static/js/787.e153456c.chunk.js",
     "static/media/cash.jpg": "/exchanger-react/static/media/cash.275eb39e5c55c9316d18.jpg",
     "index.html": "/exchanger-react/index.html",
-    "main.44228eeb.css.map": "/exchanger-react/static/css/main.44228eeb.css.map",
-    "main.85ff7c67.js.map": "/exchanger-react/static/js/main.85ff7c67.js.map",
+    "main.f84fe93f.css.map": "/exchanger-react/static/css/main.f84fe93f.css.map",
+    "main.cd6eb150.js.map": "/exchanger-react/static/js/main.cd6eb150.js.map",
     "787.e153456c.chunk.js.map": "/exchanger-react/static/js/787.e153456c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44228eeb.css",
-    "static/js/main.85ff7c67.js"
+    "static/css/main.f84fe93f.css",
+    "static/js/main.cd6eb150.js"
   ]
 }
