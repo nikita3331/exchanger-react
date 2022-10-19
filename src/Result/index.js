@@ -1,16 +1,16 @@
-import "./style.css";
+import { Paragraph } from "./styled.js";
 
 const Result = ({ result }) => {
   if (result === "") {
     return null;
   }
   return (
-    <p className="form__paragraph">
+    <Paragraph>
       <span>
         Za {result.originalAmount} PLN otrzymasz {result.finalResult.toFixed(2)}{" "}
         {result.currency}
       </span>
-    </p>
+    </Paragraph>
   );
 };
 

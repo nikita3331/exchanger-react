@@ -1,7 +1,14 @@
 import { useState } from "react";
-import "./style.css";
 import Result from "../Result";
 import currencies from "../currencies.js";
+import {
+  StyledForm,
+  StyledFieldset,
+  StyledLabel,
+  StyledLegend,
+  StyledInput,
+  StyledButton,
+} from "./styled.js";
 
 const Form = () => {
   const [amount, setAmount] = useState("");
@@ -25,16 +32,13 @@ const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">
-          Kwota w PLN jaką chcesz przeliczyć
-        </legend>
+    <StyledForm onSubmit={onFormSubmit}>
+      <StyledFieldset>
+        <StyledLegend>Kwota w PLN jaką chcesz przeliczyć</StyledLegend>
         <p>
-          <label className="form__label">
+          <StyledLabel>
             Podaj kwotę *:
-            <input
-              className="form__input"
+            <StyledInput
               name="amount"
               type="number"
               min="0.01"
@@ -43,13 +47,13 @@ const Form = () => {
               value={amount}
               onChange={(event) => setAmount(event.target.value)}
             />
-          </label>
+          </StyledLabel>
         </p>
-      </fieldset>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">Waluta przeliczenia</legend>
+      </StyledFieldset>
+      <StyledFieldset>
+        <StyledLegend>Waluta przeliczenia</StyledLegend>
         <p>
-          <label className="form__label">
+          <StyledLabel>
             Wybierz walutę:
             <select
               name="currency"
@@ -64,12 +68,12 @@ const Form = () => {
                 );
               })}
             </select>
-          </label>
+          </StyledLabel>
         </p>
-      </fieldset>
-      <button className="form__button">Przelicz</button>
+      </StyledFieldset>
+      <StyledButton>Przelicz</StyledButton>
       <Result result={result} />
-    </form>
+    </StyledForm>
   );
 };
 

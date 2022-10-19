@@ -1,32 +1,39 @@
-.form {
+import styled from "styled-components";
+
+export const StyledForm = styled.form`
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-.form__fieldset {
+`;
+
+export const StyledFieldset = styled.fieldset`
   padding: 20px;
   margin-bottom: 20px;
   background-color: rgba(170, 226, 208, 0.732);
   border-radius: 10px;
   box-shadow: 9px 10px 20px #ccc;
-}
-.form__legend {
+`;
+
+export const StyledLabel = styled.label`
+  padding: 0 10px;
+  font-size: 20px;
+`;
+
+export const StyledLegend = styled.legend`
   padding: 10px;
   border: 2px solid #eee;
   border-radius: 20px;
   background-color: aliceblue;
   font-size: 25px;
   color: rgb(43, 41, 41);
-}
-.form__label {
-  padding: 0 10px;
-  font-size: 20px;
-}
-.form__input {
+`;
+
+export const StyledInput = styled.input`
   margin: 0 20px;
-}
-.form__button {
+`;
+
+export const StyledButton = styled.button`
   margin-top: 20px;
   width: 600px;
   align-self: center;
@@ -35,21 +42,16 @@
   padding: 10px;
   border-radius: 10px;
   font-size: 25px;
-}
-@media (max-width: 767px) {
-  .form__button {
+
+  @media (max-width: 767px) {
     max-width: 350px;
   }
-}
-.form__button:hover {
-  background-color: rgba(113, 129, 124, 0.4);
-}
-.form__button:active {
-  background-color: rgba(113, 129, 124, 0.25);
-}
-.form__paragraph {
-  margin: 10px;
-  padding: 20px;
-  font-size: 25px;
-  color: #ccc;
-}
+
+  &:hover {
+    background-color: rgba(113, 129, 124, 0.4);
+  }
+
+  &:active {
+    background-color: rgba(113, 129, 124, 0.25);
+  }
+`;

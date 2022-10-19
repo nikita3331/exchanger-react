@@ -1,4 +1,4 @@
-import "./style.css";
+import { Container } from "./styled.js";
 import { useState, useEffect } from "react";
 
 const Clock = () => {
@@ -23,9 +23,9 @@ const Clock = () => {
   const timeContent = date.toLocaleTimeString();
 
   return (
-    <div className="clock">
+    <Container>
       Dzisiaj jest {dateContent}, {timeContent}
-    </div>
+    </Container>
   );
 };
 
