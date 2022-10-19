@@ -12,7 +12,7 @@ export const StyledFieldset = styled.fieldset`
   margin-bottom: 20px;
   background-color: rgba(170, 226, 208, 0.732);
   border-radius: 10px;
-  box-shadow: 9px 10px 20px #ccc;
+  box-shadow: 9px 10px 20px ${({ theme }) => theme.colors.silver};
 `;
 
 export const StyledLabel = styled.label`
@@ -22,7 +22,7 @@ export const StyledLabel = styled.label`
 
 export const StyledLegend = styled.legend`
   padding: 10px;
-  border: 2px solid #eee;
+  border: 2px solid ${({ theme }) => theme.colors.gallery};
   border-radius: 20px;
   background-color: aliceblue;
   font-size: 25px;
@@ -43,7 +43,7 @@ export const StyledButton = styled.button`
   border-radius: 10px;
   font-size: 25px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: 350px;
   }
 

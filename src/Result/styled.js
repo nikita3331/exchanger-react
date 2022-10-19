@@ -4,5 +4,5 @@ export const Paragraph = styled.p`
   margin: 10px;
   padding: 20px;
   font-size: 25px;
-  color: #ccc;
+  color: ${({ theme }) => theme.colors.silver};
 `;
