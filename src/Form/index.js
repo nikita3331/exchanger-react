@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Result from "../Result";
 import currencies from "../currencies.js";
 import {
@@ -14,6 +14,11 @@ const Form = () => {
   const [amount, setAmount] = useState("");
   const [currency, setCurrency] = useState(currencies[0].id);
   const [result, setResult] = useState("");
+  const inputRef = useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
 
   const calculateResult = (amount, currency) => {
     const targetRate = currencies.find(({ id }) => id === currency).rate;
@@ -39,6 +44,7 @@ const Form = () => {
           <StyledLabel>
             Podaj kwotę *:
             <StyledInput
+              ref={inputRef}
               name="amount"
               type="number"
               min="0.01"
@@ -72,7 +78,7 @@ const Form = () => {
           </StyledLabel>
         </p>
       </StyledFieldset>
-      <StyledButton>Przelicz</StyledButton>
+      <StyledButton onClick={focusInput}>Przelicz</StyledButton>
       <Result result={result} />
     </StyledForm>
   );
