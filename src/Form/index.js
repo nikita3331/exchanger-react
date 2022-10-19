@@ -55,7 +55,8 @@ const Form = () => {
         <p>
           <StyledLabel>
             Wybierz walutę:
-            <select
+            <StyledInput
+              as="select"
               name="currency"
               value={currency}
               onChange={(event) => setCurrency(event.target.value)}
@@ -67,7 +68,7 @@ const Form = () => {
                   </option>
                 );
               })}
-            </select>
+            </StyledInput>
           </StyledLabel>
         </p>
       </StyledFieldset>
