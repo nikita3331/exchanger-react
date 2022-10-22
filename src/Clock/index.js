@@ -1,4 +1,4 @@
-import { Container } from "./styled.js";
+import { StyledContainer } from "./styled.js";
 import { useCurrentDate } from "../useCurrentDate";
 
 const Clock = () => {
@@ -13,9 +13,9 @@ const Clock = () => {
   const timeContent = date.toLocaleTimeString();
 
   return (
-    <Container>
+    <StyledContainer>
       Dzisiaj jest {dateContent}, {timeContent}
-    </Container>
+    </StyledContainer>
   );
 };
 
