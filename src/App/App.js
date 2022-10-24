@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     fetch("https://api.exchangerate.host/latest?base=PLN")
       .then((response) => response.json())
-      .then((dataRates) => {
+      .then(({rates,date}) => {
         setRates(dataRates.rates);
         setDate(dataRates.date);
       });
