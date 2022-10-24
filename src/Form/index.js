@@ -10,7 +10,7 @@ import {
   StyledButton,
 } from "./styled.js";
 
-const Form = () => {
+const Form = ({ date }) => {
   const [amount, setAmount] = useState("");
   const [currency, setCurrency] = useState(currencies[0].id);
   const [result, setResult] = useState("");
@@ -79,6 +79,7 @@ const Form = () => {
         </p>
       </StyledFieldset>
       <StyledButton onClick={focusInput}>Przelicz</StyledButton>
+      <p>{date}</p>
       <Result result={result} />
     </StyledForm>
   );
