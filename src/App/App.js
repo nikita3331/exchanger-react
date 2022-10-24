@@ -8,7 +8,9 @@ import { useState, useEffect } from "react";
 function App() {
   const [rates, setRates] = useState({});
   const [date, setDate] = useState("");
-
+  const fetchFromApi=()=>{
+  console.log('do something')
+  }
   useEffect(() => {
     fetch("https://api.exchangerate.host/latest?base=PLN")
       .then((response) => response.json())
