@@ -20,6 +20,9 @@ function App() {
     console.log(rates);
   }, []);
 
+  if(loading){
+  return (<div>Ladowanie</div>)
+  }
   return (
     <>
       <StyledContainer>
